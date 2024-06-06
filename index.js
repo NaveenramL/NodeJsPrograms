@@ -13,3 +13,14 @@ console.log("Printing the laptop brand : "+laptopBrand.getName()); // here getti
 
 laptopBrand.setName("Sony"); // here setting the laptop name
 console.log("Printing the laptop brand : "+laptopBrand.getName());
+
+const newInstance = require("./laptop");
+console.log("Printing the laptop brand : "+newInstance.getName());
+
+const desktop = require("./desktop");
+
+const firstDesktop = new desktop("Apple");
+console.log("Printing the Desktop name : "+firstDesktop.getName());
+
+const secondDesktop = new desktop("Microsoft");
+console.log("Printing the secondDesktop name : "+secondDesktop.getName());
