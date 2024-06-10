@@ -1,4 +1,4 @@
-class Desktop{ //  this is a class
+class Desktop{ //  this is a class, This class is used to demonstrate the example to skip Module Caching
     constructor(name){ // this is a constructor
         this.name = name;
     }

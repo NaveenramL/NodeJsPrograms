@@ -8,7 +8,7 @@
 
 // console.log("Hello World"); // displays whatever is given inside this console
 
-const laptopBrand = require("./laptop");
+const laptopBrand = require("./laptop");  // Here Desktop module is imported to demonstrate the example of Module Caching
 console.log("Printing the laptop brand : "+laptopBrand.getName()); // here getting the laptop name
 
 laptopBrand.setName("Sony"); // here setting the laptop name
@@ -17,7 +17,7 @@ console.log("Printing the laptop brand : "+laptopBrand.getName());
 const newInstance = require("./laptop");
 console.log("Printing the laptop brand : "+newInstance.getName());
 
-const desktop = require("./desktop");
+const desktop = require("./desktop");  // Here Desktop module is imported to demonstrate the example of to skip Module Caching
 
 const firstDesktop = new desktop("Apple");
 console.log("Printing the Desktop name : "+firstDesktop.getName());
